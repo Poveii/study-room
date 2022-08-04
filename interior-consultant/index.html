@@ -11,43 +11,57 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
     <header>
-      <div id="header-text"><h1>THIS INTERIOR</h1></div>
+      <a id="header-text" href="#"><h1>THIS INTERIOR</h1></a>
       <nav>
-        <span class="material-icons"> menu </span>
-        <div hidden="true">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#collection">Collection</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title active" href="#home">Home</a></li>
+            <li><a class="title" href="#collection">Collection</a></li>
+            <li><a class="title" href="#about">About</a></li>
+            <li><a class="title" href="#contact">Contact</a></li>
           </ul>
+        </div>
+        <div class="toggle">
+          <span class="material-icons"> menu </span>
         </div>
       </nav>
     </header>
     <main>
-      <h1>Modern interior</h1>
-      <p>
-        A full-Service residential & commercial interior design and staging
-        company offering professional organizing & eco-services.
-      </p>
-      <small>
-        <a href=""
-          >Read more <span class="material-icons"> trending_flat </span>
-        </a>
-      </small>
-      <div class="mural">
-        <img src="./images/photo2.png" alt="Aliza Webber's photo smiling" />
-        <h1>Aliza Webber</h1>
-        <h2>Interior designer</h2>
-        <p>Designed in 2020 by Aliza Webber</p>
-      </div>
+      <section class="principal">
+        <h1>Modern interior</h1>
+        <p>
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
+        </p>
+        <small>
+          <a href=""
+            >Read more <span class="material-icons"> trending_flat </span>
+          </a>
+        </small>
+      </section>
+      <section class="mural">
+        <div class="container">
+          <div class="owner">
+            <img
+              src="./src/images/photo2.png"
+              alt="Aliza Webber's photo smiling"
+            />
+            <div class="carrer">
+              <h1>Aliza Webber</h1>
+              <h2>Interior designer</h2>
+            </div>
+          </div>
+          <p>Designed in 2020 by Aliza Webber</p>
+        </div>
+      </section>
     </main>
     <footer>
       <small>created by <ins>Poveii</ins> - devChallenges.io</small>
     </footer>
+    <script src="./src/scripts/main.js"></script>
   </body>
 </html>
