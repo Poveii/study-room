@@ -16,14 +16,15 @@ main {
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   margin-top: 18px;
-  margin-bottom: 38px;
 }
 
 #header-text {
   width: 103px;
   height: 31px;
-  display: block;
   border: 1px solid white;
 }
 
@@ -36,6 +37,7 @@ header {
 
 nav {
   display: flex;
+  margin-right: 8px;
 }
 
 nav .menu {
@@ -102,7 +104,6 @@ nav .menu ul {
 }
 
 .toggle {
-  margin-left: 214px;
   z-index: 1;
 }
 
@@ -111,6 +112,13 @@ nav .menu ul {
 }
 
 /* ======= MAIN ======= */
+main {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 38px;
+}
+
 main h1 {
   font: 500 36px "Lora", serif;
 }
@@ -180,10 +188,13 @@ small a span {
 
 .container h2 {
   font: 500 10px "Montserrat", sans-serif;
+  color: #828282;
 }
 
 .container p {
   font: 700 18px "Lora", serif;
+
+  width: 210px;
   padding-top: 20px;
   padding-left: 18px;
 }
@@ -196,16 +207,12 @@ small a span {
 
 .carrer {
   display: grid;
-  gap: 6px;
   padding-left: 12px;
 }
 
 /* ======= FOOTER ======= */
 footer {
-  display: flex;
-  justify-content: center;
-
-  margin-top: 60px;
+  text-align: center;
   margin-bottom: 24px;
 }
 
