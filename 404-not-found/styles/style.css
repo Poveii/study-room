@@ -1,54 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap');
-@import './reset.css';
-@import './variables.css';
+/* ======= IMPORTING ======= */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap");
+@import "./global.css";
 
-
+/* ======= HEADER ======= */
 #header {
   font: 700 24px var(--header-font);
   letter-spacing: -0.08em;
   line-height: 25px;
   text-transform: uppercase;
 
-  margin-top: 40px;
-  margin-left: 77px;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 
-#container {
-  height: 80vh;
+/* ======= MAIN ======= */
+#main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
 }
 
-img {
-  width: 540px;
+#main img {
+  width: 288px;
+
+  margin-top: 64px;
+  margin-bottom: 60px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  margin-left: 24px;
 }
 
 #title {
-  font: 700 64px var(--main-font);
+  font: 700 48px var(--main-font);
   letter-spacing: -0.035em;
 
-  width: 586px;
+  width: 350px;
+  margin-bottom: 32px;
 
   color: #333333;
 }
 
-#main p {
-  width: 381px;
-  margin-top: 36px;
-
-  font: 400 24px var(--main-font);
+#container p {
+  font: 400 18px var(--main-font);
   letter-spacing: -0.035em;
+  margin-bottom: 64px;
 
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
-#main button {
+#container button {
   font: 700 14px var(--main-font);
   letter-spacing: -0.035em;
   text-transform: uppercase;
 
-  margin-top: 64px;
+  width: 216px;
   padding: 23px 43px;
 
   background-color: #333333;
@@ -57,156 +69,32 @@ img {
   cursor: pointer;
 }
 
+/* ======= FOOTER ======= */
 #footer {
   font: 500 14px var(--footer-font);
 
-  margin-bottom: 24px;
-  color: #BDBDBD;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+  margin-top: 114px;
+  margin-bottom: 24px;
+  color: #bdbdbd;
+  text-align: center;
 }
 
 #footer ins {
-  font: 700 14px var(--footer-font);
+  font-weight: 700;
 }
 
-
-@media (max-width: 1024px) {
-  #header {    
-    margin-top: 42px;
-    margin-left: 56px;
-  }
-
-  img {
-    width: 460px;
-  }
-
-  #title {
-    font: 700 56px var(--main-font);
-
-    width: 400px;
-  }
-
-  #main p {
-    width: 350px;
-    margin-top: 36px;
-
-    font: 400 22px var(--main-font);
-  }
-}
-
-@media (max-width: 768px) {
-  #header {    
-    margin-top: 36px;
-    margin-left: 48px;
-  }
-
-  #container {
-    margin-top: 24px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  img {
-    width: 380px;
-  }
-
-  #main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #title {
-    font: 700 52px var(--main-font);
-  }
-
-  #main p {
-    width: 320px;
-    font: 400 20px var(--main-font);
-    
-    margin-top: 32px;
-  }
-
-  #main button {
-    margin-top: 56px;
-    padding: 21px 41px;
-  }
-}
-
-@media (max-width: 425px) {
-  #header {
-    margin-top: 24px;
-    margin-left: 28px;
-  }
-
-  #container {
-    text-align: left;
-  }
-
-  img {
-    width: 320px;
-  }
-
-  #main {
-    display: block;
-  }
-
-  #title {
-    font: 700 48px var(--main-font);
-
-    width: 360px;
-  }
-
-  #main p {
-    width: 320px;
-    margin-top: 32px;
-  }
-
-  #main button {
-    margin-top: 56px;
-  }
-}
-
-@media (max-width: 375px) {
-  #header {
-    margin-top: 20px;
-    margin-left: 24px;
-  }
-
-  img {
-    width: 288px;
-  }
-
-  #main {
-    margin-left: 24px;
-  }
-
-  #title {
-    width: 350px;
-  }
-
-  #main p {
-    width: 328px;
-    margin-top: 30px;
-  }
-
-  #main button {
-    margin-top: 66px;
-    padding: 23px 43px;
-  }
-}
-
+/* ======= MEDIA QUERIES ======= */
 @media (max-width: 320px) {
   #header {
     font: 700 20px var(--header-font);
     line-height: 21px;
   }
 
-  img {
+  #main img {
     width: 260px;
   }
 
@@ -218,15 +106,168 @@ img {
 
   #main p {
     width: 280px;
+
+    margin-bottom: 52px;
   }
 
   #main button {
-    margin-top: 52px;
     padding: 20px 40px;
   }
 
   #footer,
   #footer ins {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 425px) {
+  #header {
+    margin-top: 24px;
+    margin-left: 28px;
+  }
+
+  #main img {
+    width: 320px;
+
+    margin-top: 56px;
+    margin-bottom: 58px;
+  }
+
+  #container {
+    margin-left: 12px;
+  }
+
+  #title {
+    font: 700 48px var(--main-font);
+
+    width: 360px;
+    margin-bottom: 32px;
+  }
+
+  #main p {
+    width: 320px;
+    margin-bottom: 56px;
+  }
+
+  #footer {
+    margin-top: 104px;
+  }
+}
+
+@media (min-width: 768px) {
+  #header {
+    margin-top: 36px;
+    margin-left: 48px;
+  }
+
+  #main img {
+    width: 380px;
+
+    margin-top: 48px;
+    margin-bottom: 54px;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-left: 0;
+  }
+
+  #title {
+    font: 700 52px var(--main-font);
+    width: 400px;
+  }
+
+  #main p {
+    font: 400 20px var(--main-font);
+
+    margin-bottom: 56px;
+  }
+
+  #main button {
+    padding: 21px 41px;
+  }
+
+  #footer {
+    margin-top: 84px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #header {
+    margin-top: 42px;
+    margin-left: 56px;
+  }
+
+  #main {
+    flex-direction: row;
+
+    margin-top: 150px;
+  }
+
+  #main img {
+    width: 460px;
+
+    margin: 0;
+  }
+
+  #container {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  #title {
+    font: 700 56px var(--main-font);
+
+    width: 400px;
+    margin-bottom: 36px;
+  }
+
+  #container p {
+    width: 350px;
+
+    font: 400 22px var(--main-font);
+  }
+
+  #footer {
+    margin-top: 260px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #header {
+    margin-top: 40px;
+    margin-left: 77px;
+  }
+
+  #main {
+    margin-top: 200px;
+  }
+
+  #main img {
+    width: 540px;
+  }
+
+  #title {
+    font: 700 64px var(--main-font);
+
+    width: 586px;
+  }
+
+  #container p {
+    width: 380px;
+
+    font: 400 24px var(--main-font);
+  }
+
+  #container button {
+    padding: 23px 43px;
+  }
+
+  #footer {
+    margin-top: 320px;
   }
 }

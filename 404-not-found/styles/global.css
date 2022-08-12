@@ -1,0 +1,13 @@
+/* ======= GLOBAL ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+:root {
+  --header-font: "Inconsolata", sans-serif;
+  --main-font: "Space Mono", sans-serif;
+  --footer-font: "Montserrat", sans-serif;
+}
