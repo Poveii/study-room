@@ -1,5 +1,15 @@
-/* ==== IMPORTING ==== */
-@import "./global.css";
+/* ======= GLOBAL ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-font: "Inconsolata", sans-serif;
+  --main-font: "Space Mono", sans-serif;
+  --footer-font: "Montserrat", sans-serif;
+}
 
 /* ======= HEADER ======= */
 header {
