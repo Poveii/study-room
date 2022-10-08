@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticando Tabelas - Discover</title>
+  </head>
+  <body>
+    <!-- Primeira Tabela -->
+    <table>
+      <caption>
+        Relação Pessoas
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Pablo</td>
+          <td>18</td>
+        </tr>
+
+        <tr>
+          <td>Juan</td>
+          <td>11</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Total:</td>
+          <td>2 Pessoas</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+    <hr />
+
+    <!-- Segunda Tabela -->
+    <table>
+      <caption>
+        Produzidos x Vendidos por lojas
+      </caption>
+
+      <colgroup>
+        <col />
+        <col span="2" style="background-color: pink" />
+        <col span="2" style="background-color: lightblue" />
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2" scope="colgroup">Afonso Pena</th>
+          <th colspan="2" scope="colgroup">Antônio Pereira</th>
+        </tr>
+
+        <tr>
+          <th scope="col">Produzidos</th>
+          <th scope="col">Vendidos</th>
+          <th scope="col">Produzidos</th>
+          <th scope="col">Vendidos</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Vassouras</th>
+          <td>30</td>
+          <td>20</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Baldes</th>
+          <td>20</td>
+          <td>20</td>
+          <td>15</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
