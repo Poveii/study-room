@@ -1,8 +1,12 @@
 header {
-  background-color: #7c5e99;
+  background-color: #292929;
 }
 
 a {
-  color: white;
+  color: #fbf5f3;
   font-size: 20px;
+  font-weight: 500;
+  font-family: "Fira Code", sans-serif, monospace;
+  text-decoration: none;
+  margin-right: 30px;
 }
