@@ -10,3 +10,12 @@ a {
   text-decoration: none;
   margin-right: 30px;
 }
+
+#button {
+  display: inline-block;
+  background-color: #ffba08;
+  height: 60px;
+  line-height: 60px;
+  padding-inline: 20px;
+  box-shadow: 5px 5px 0px #000000;
+}
